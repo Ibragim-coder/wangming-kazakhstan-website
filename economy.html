@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>哈萨克斯坦经济</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            overflow: auto !important;
+        }
+
+        .eco-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .eco-card {
+            background: white;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            transform: translateY(30px);
+            opacity: 0;
+            animation: ecoFade 0.8s ease forwards;
+        }
+
+        .eco-card:nth-child(1) {animation-delay: 0.1s;}
+        .eco-card:nth-child(2) {animation-delay: 0.3s;}
+        .eco-card:nth-child(3) {animation-delay: 0.5s;}
+        .eco-card:nth-child(4) {animation-delay: 0.7s;}
+
+        .eco-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .eco-percent {
+            font-size: 40px;
+            font-weight: bold;
+            color: goldenrod;
+            margin-bottom: 10px;
+        }
+
+        .eco-text {
+            font-size: 17px;
+            line-height: 1.6;
+            color: black;
+        }
+
+        @keyframes ecoFade {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <h1>哈萨克斯坦经济</h1>
+    <p>哈萨克斯坦是中亚地区经济最发达的国家之一，拥有丰富的自然资源和稳定的发展结构：</p>
+
+    <div class="eco-grid">
+
+        <!-- ✅ 1. 石油与天然气 -->
+        <div class="eco-card">
+            <div class="eco-title">石油与天然气</div>
+            <div class="eco-percent">≈ 40%</div>
+            <div class="eco-text">
+                石油和天然气是哈萨克斯坦经济的核心部分。国家是世界主要石油出口国之一，能源产业为国家财政和国际贸易提供了主要收入来源。
+            </div>
+        </div>
+
+        <!-- ✅ 2. 工业与采矿 -->
+        <div class="eco-card">
+            <div class="eco-title">工业与采矿</div>
+            <div class="eco-percent">≈ 25%</div>
+            <div class="eco-text">
+                哈萨克斯坦盛产铀、铜、铁、金等矿产资源，是世界领先的铀生产国之一。工业和采矿在国家经济中占据重要地位。
+            </div>
+        </div>
+
+        <!-- ✅ 3. 农业 -->
+        <div class="eco-card">
+            <div class="eco-title">农业</div>
+            <div class="eco-percent">≈ 15%</div>
+            <div class="eco-text">
+                农业是传统经济支柱之一，主要发展畜牧业和小麦种植。哈萨克斯坦是世界重要的粮食出口国。
+            </div>
+        </div>
+
+        <!-- ✅ 4. 服务业与金融 -->
+        <div class="eco-card">
+            <div class="eco-title">服务业与金融</div>
+            <div class="eco-percent">≈ 20%</div>
+            <div class="eco-text">
+                服务业包括银行、教育、医疗、交通和贸易。近年来，数字经济和金融科技也在快速发展中。
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <a href="index.html">← 返回首页</a>
+</div>
+
+</body>
+</html>

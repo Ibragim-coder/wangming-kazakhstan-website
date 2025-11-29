@@ -34,7 +34,6 @@
             animation: pulse 1.5s infinite;
         }
 
-        /* ✅ ТВОИ КООРДИНАТЫ БЕЗ ОШИБОК */
         .dot1 { top: 26.2%; left: 60.5%; }
         .dot2 { top: 83.9%; left: 52.4%; }
         .dot3 { top: 73.8%; left: 72.9%; }
@@ -84,17 +83,14 @@
     <h1>哈萨克斯坦的领土</h1>
     <p>点击地图上的城市，查看地区介绍：</p>
 
-    <!-- ✅ КАРТА -->
     <div class="map-box">
         <img src="media/territory.png" alt="Kazakhstan Map">
 
-        <!-- ✅ ТОЧКИ -->
         <div class="dot dot1" onclick="showRegion(1)"></div>
         <div class="dot dot2" onclick="showRegion(2)"></div>
         <div class="dot dot3" onclick="showRegion(3)"></div>
     </div>
 
-    <!-- ✅ ТЕКСТЫ РЕГИОНОВ -->
     <div id="region1" class="region-text">
         <b>阿斯塔纳（首都）：</b>  
         阿斯塔纳是哈萨克斯坦的首都和政治中心。这座城市以现代建筑、政府机构和国际会议闻名，是国家发展的象征。
@@ -110,7 +106,6 @@
         阿拉木图是哈萨克斯坦最大的城市和文化、教育中心。这里有高山、滑雪场、大学和商业中心。
     </div>
 
-    <!-- ✅ ФАКТЫ -->
     <div class="facts">
         <div class="fact-card">📐 面积：2,724,900 平方公里（世界第九）</div>
         <div class="fact-card">🌍 欧洲与亚洲交界的国家</div>
@@ -124,12 +119,10 @@
 
 <script>
 function showRegion(num) {
-        // скрываем ВСЕ тексты
         document.querySelectorAll(".region-text").forEach(block => {
             block.style.display = "none";
         });
 
-        // показываем нужный
         const active = document.getElementById("region" + num);
         if (active) {
             active.style.display = "block";
@@ -140,3 +133,4 @@ function showRegion(num) {
 
 </body>
 </html>
+

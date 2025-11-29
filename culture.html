@@ -34,27 +34,25 @@
             width: 100%;
             height: 180px;
             object-fit: cover;
-            object-position: center center;  /* центр по умолчанию */
+            object-position: center center;  
             display: block;
         }
-                /* 1-я картинка (стрельба из лука) */
+                
         .card:nth-child(1) img {
-            object-position: center 30%;   /* меньше процента → картинка сдвигается ВВЕРХ */
+            object-position: center 30%;  
         }
 
-        /* 2-я картинка (гостеприимство) */
+
         .card:nth-child(2) img {
             object-position: center 40%;
         }
 
-        /* 3-я картинка (Наурыз) */
         .card:nth-child(3) img {
             object-position: center 50%;
         }
 
-        /* 4-я картинка (орнаменты) */
         .card:nth-child(4) img {
-            object-position: center 50%;   /* ближе к низу */
+            object-position: center 50%; 
         }
 
 
@@ -64,8 +62,8 @@
             bottom: 0;
             width: 100%;
             text-align: center;
-            background: rgba(0,0,0,0.5);  /* ✅ ТЁМНАЯ ПОДЛОЖКА */
-            color: white;                 /* ✅ БЕЛЫЙ ТЕКСТ */
+            background: rgba(0,0,0,0.5);  
+            color: white;           
             font-size: 22px;
             padding: 10px;
             font-weight: bold;
@@ -75,15 +73,15 @@
         .text-box {
             display: none;
             margin-top: 30px;
-            background: white;              /* ✅ БЕЛЫЙ ФОН */
-            color: black;                   /* ✅ ЧЁРНЫЙ ТЕКСТ */
+            background: white;            
+            color: black;                
             padding: 25px;
             border-radius: 20px;
             font-size: 18px;
             line-height: 1.6;
             animation: fadeIn 0.5s ease;
 
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);  /* ✅ КРАСИВАЯ ТЕНЬ */
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);  
         }
 
         @keyframes fadeIn {
@@ -98,7 +96,6 @@
     <h1>哈萨克斯坦文化</h1>
     <p>点击图片查看文化介绍：</p>
 
-    <!-- ✅ СЕТКА ИЗ 4 ФОТО -->
     <div class="gallery">
 
         <div class="card" onclick="showText(1)">
@@ -123,7 +120,6 @@
 
     </div>
 
-    <!-- ✅ ТЕКСТЫ -->
     <div id="text1" class="text-box">
         <b>射箭：</b>  
         射箭是哈萨克民族的传统体育项目之一。在古代，射箭不仅是狩猎和战争的重要技能，也是男子勇敢、力量和精准的象征。现在，射箭仍然在民族节日和体育比赛中广泛存在。
@@ -148,7 +144,6 @@
     <a href="index.html">← 返回首页</a>
 </div>
 
-<!-- ✅ JS: ПОКАЗ ТЕКСТА -->
 <script>
 function showText(num) {
     let texts = document.querySelectorAll(".text-box");
@@ -160,4 +155,5 @@ function showText(num) {
 
 </body>
 </html>
+
 
